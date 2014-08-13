@@ -7,7 +7,7 @@ if exists("b:current_syntax")
   finish
 endif
 
-syn match   legRuleIdentifier   /^[\a\-]\+/ skipwhite nextgroup=legSeperator
+syn match   legRuleIdentifier   /^(\a|-)\+/ skipwhite nextgroup=legSeperator
 
 syn match   legSeperator        "=" skipwhite contained nextgroup=legExpression
 
